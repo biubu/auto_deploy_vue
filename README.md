@@ -3,7 +3,7 @@
 >1. 打包前请务必配置根目录的`ecosystem.config.js`中的`PROJECT_PATH` `host` `key` 和`repo` 字段,否则部署不成功.
 >2. 确保服务器能够正常访问git仓库,否则git clone不成功,
 >3. 确保服务器安装了node 和 npm.
->4. 确保服务器可以免密登录并且能够通过ssh面密登录服务器,方法请自行谷歌
+>4. 确保服务器开启免密登录,并且能够通过ssh免密成功登录服务器(方法请自行谷歌)
 
 
 ------
@@ -23,11 +23,6 @@ npm install
 ```
 npm install --registry=https://registry.npm.taobao.org
 ```
-
-
-
-
-
 
 ### 启动开发服务
 ```
