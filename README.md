@@ -19,11 +19,6 @@ npm -v
 npm install
 ```
 
-### 项目初始化安装依赖-使用淘宝源
-```
-npm install --registry=https://registry.npm.taobao.org
-```
-
 ### 启动开发服务
 ```
 npm run serve
