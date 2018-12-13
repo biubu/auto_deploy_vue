@@ -1,0 +1,104 @@
+{
+    "name": "template",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve --open",
+        "deploy": "pm2 deploy production setup",
+        "lint": "vue-cli-service lint"
+    },
+    "dependencies": {
+        "axios": "^0.18.0",
+        "vue": "^2.5.17",
+        "vue-router": "^3.0.1",
+        "vuex": "^3.0.1"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^3.0.1",
+        "@vue/cli-plugin-eslint": "^3.0.1",
+        "@vue/cli-service": "^3.0.1",
+        "less": "^3.0.4",
+        "less-loader": "^4.1.0",
+        "lint-staged": "^7.2.2",
+        "pm2": "^3.2.3",
+        "vue-template-compiler": "^2.5.17"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "eslint:recommended"
+        ],
+        "rules": {
+            "no-var": "error",
+            "no-debugger": "error",
+            "indent": [
+                "error",
+                4
+            ],
+            "no-console": "error",
+            "semi": [
+                "error",
+                "always"
+            ],
+            "semi-style": [
+                "error",
+                "last"
+            ],
+            "semi-spacing": [
+                "error",
+                {
+                    "before": false,
+                    "after": true
+                }
+            ],
+            "no-dupe-keys": "error",
+            "no-eval": "error",
+            "no-alert": "error",
+            "no-eq-null": "error",
+            "max-len": [
+                "error",
+                {
+                    "code": 120
+                }
+            ],
+            "max-lines": [
+                "error",
+                {
+                    "max": 200,
+                    "skipBlankLines": true,
+                    "skipComments": true
+                }
+            ]
+        },
+        "parserOptions": {
+            "parser": "babel-eslint"
+        }
+    },
+    "postcss": {
+        "plugins": {
+            "autoprefixer": {}
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 8"
+    ],
+    "gitHooks": {
+        "pre-commit": "lint-staged"
+    },
+    "lint-staged": {
+        "*.js": [
+            "vue-cli-service lint",
+            "git add"
+        ],
+        "*.vue": [
+            "vue-cli-service lint",
+            "git add"
+        ]
+    }
+}
