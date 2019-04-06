@@ -15,7 +15,7 @@ export default new Vuex.Store({
     },
     actions: {
         example() {
-            Api.example({example: 'example'}).then(result => {
+            Api.example().then(result => {
                 sessionStorage.data = JSON.stringify(result);
             });
         },

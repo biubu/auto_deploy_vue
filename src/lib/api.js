@@ -5,6 +5,6 @@ import { dev, fetch } from './fetch';
 
 export default {
     example(params) {
-        return fetch(dev ? 'example.json' : 'example', params);
+        return fetch(dev ? 'example.json' : 'hotel', params);
     }
 };
