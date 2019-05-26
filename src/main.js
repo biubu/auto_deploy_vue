@@ -3,9 +3,12 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 import plugins from './util/plugins';
-
+import iView from 'iview';
+import 'iview/dist/styles/iview.css';
 Vue.use(plugins);
 Vue.config.productionTip = false;
+Vue.use(iView);
+
 
 // 通过读取components文件夹下的文件引入组件,不在需要每个都去import一遍,再去注册了;
 

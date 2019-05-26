@@ -11,8 +11,8 @@ axios.defaults.timeout = 300000; // 超时设置
 // 本地json 支持get请求,
 export let dev = false;
 
-let baseUrl = 'http://node.biubu.cn/';
-// let baseUrl = 'http://localhost:8089/';
+// let baseUrl = 'http://node.biubu.cn/';
+let baseUrl = 'http://localhost:9090/';
 const ajaxUrl = dev ? '/' : baseUrl;
 
 axios.defaults.baseURL = ajaxUrl;

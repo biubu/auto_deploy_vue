@@ -17,7 +17,7 @@ export default {
         HelloWorld
     },
     mounted() {
-        this.$store.dispatch('example');
+        this.$store.dispatch('test');
     },
     methods: {
         increment() {
